@@ -1,51 +1,8 @@
-## Before Starting This Task
+**Goal:** 
 
-It's recommended that you **only begin this task if you have already submitted Tasks 1 to 8.** 
+My game is a simple rendition of the classic Hangman game, where the computer (Python) will randomly select one word out of a list of 10 words, and then prompt a player to guess the word in 7 tries or less. The player is able to guess one letter at a time, by typing that letter in either lowercase or uppercase characters. The letters of the chosen word are shown by a row of dashes representing each letter of the unknown word.  Every time a player guesses a letter incorrectly, a body part is drawn onto a drawing of a stick-figure being hung, bringing the player closer to losing. Conversely, if they guess a letter correctly, its position in the word is revealed and no body parts are added to the hangman. If the player is unable to guess the word correctly in 7 tries, all body parts of the hangman are drawn, and the player loses. However, if they guess the word in under 7 tries, the hangman is saved and the player wins. 
 
-It's okay if you are waiting for them to be reviewed.
-
-Have you read/watched the Unit 1 Lessons below?
-* [Documentation](https://github.com/Kitchener-Waterloo-Collegiate-and-VS/ICS3U/blob/main/Unit%201/1.31%20Documentation.md)
-
-## Grading
-
-## Assignment: Solo Game
-
-This is your first long-term project. You will be creating a one-player game in which a user interacts with the console.
-
-Make sure you **review the document on Google Classroom** before starting this assignment.  
-
-All your responses to these questions will be answered on the document on Google Classroom
-
-### Step 1: Choose your game.
-
-Some suggestions include:
-
-* Number guessing game
-* [Mad Libs](https://en.wikipedia.org/wiki/Mad_Libs)
-* [Mastermind](https://en.wikipedia.org/wiki/Mastermind_(board_game))
-* Mental math game
-* Trivia game
-* Word guessing game
-* [Math problem solving game](https://docs.google.com/document/d/1vEsXHTvMq4tSr3h6YQWwYdRdJD8EJseD_WfN2knJjh4/edit?usp=sharing) (do not choose a game with a graphics component)
-
-If you are choosing a different type of game, be sure to check with your teacher first.
-
-### Step 2: Plan your game.
-
-Answer the following questions on the Google Classroom document.
-
-1. How does your game work?
-2. How long do you think it will take to write all the code for this game?
-3. What do you think will be the most challenging part of creating this game?
-4. If you happen to finish early, what other features could you try to add to the game to make it better?
-
-# BEFORE YOU START CODING
-SHOW YOUR PLAN TO YOUR TEACHER FOR THEM TO SIGN OFF ON IT!
-
-### Step 3: Begin coding your game.
-
-Begin writing the code for your game in **main.py**. Ensure that your program has line comments to explain your thinking and your code includes ALL of the following:
+**Things to include in game:**
 
 * `print()`
 * `input()`
@@ -64,42 +21,14 @@ Begin writing the code for your game in **main.py**. Ensure that your program ha
 * At least one of:
   * `and`, `or`, or `not`
 
-**Optional:** 
-* If you want to add more complexity to your game, you are welcome to use the [Python Reference](https://docs.python.org/3/reference/) to learn things we haven't seen yet. **Do not** use graphics libraries such as Pygame, Tkinter, and Turtle.
- * If you are using the `curses` library you don't need to include `print()` and `input()`.
+**Changes Made:** 
 
-See your teacher so you can be set up with a partner.
+I added a hint system to my game to help players guess the hidden word more easily. After my changes, the program now asks the player if they would like a hint which reveals one of the letters in the word. If they do not want a hint, they can press any characters and the game will resume as normal. If they do choose to take a hint, one letter of the word will be revealed, but they will lose 2 out of their 7 tries at guessing the word. This is to make the game more challenging, as well as to ensure that no player uses just hints to guess every letter in the word. 
 
-### Step 4: Test your game.
+**Overall Reflection:**
 
-You will be assigned a classmate who will test out your game and give you feedback. You will also test our their game and give them feedback.
+Throughout this project, I really enjoyed the process of building a classic game that is both entertaining and challenging. Having never programmed a game in Python before, I was really excited to see my ideas come to fruition in the form of a functioning game. This project also enabled me to gain a deeper understanding and appreciation of the underlying mechanics behind some of the video games that we play today. 
 
-When giving feedback, you are encouraged to answer the following prompts:
 
-* What parts of the program/game were done well?
-* What parts of the program/game could use improvement?
-* What do you wish the program/game included?
 
-Modify your code based on their feedback.
 
-### Step 5: Acknowledge your sources.
-
-In **sources.md**, put links to ALL of the online resources you used. In your program, be sure you have line comments to indicate which parts of your program are copy/pasted from the Internet.
-
-### Step 6: Reflection.
-
-Answer the following questions on the Google Classroom document.
-
-1. What did you enjoy about this project?
-
-2. What did you not enjoy about this project?
-
-3. Describe some of the strategies you used to overcome challenges and difficulties when writing your program.
-
-4. Were there any features you planned on including but eventually decided not to include? If so, what were they?
-
-5. If you were to redo this project, what would you do differently?
-
-6. If you had more experience programming, what would you do to make this game better?
-
-7. Would you like to come back to this project later? Why or why not?
